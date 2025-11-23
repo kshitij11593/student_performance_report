@@ -7,9 +7,9 @@ def main():
     print("Loading data...")
     df = pd.read_csv("student_performance.csv")
 
-    # ================================
+   
     # 2. Correlation Heatmap
-    # ================================
+    
     plt.figure(figsize=(8, 5))
     sns.heatmap(df.corr(), annot=True, cmap='coolwarm', fmt=".2f")
     plt.title("Feature Correlation Heatmap")
